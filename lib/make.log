@@ -1,0 +1,83 @@
+running build_ext
+skipping 'model/utils/bbox.c' Cython extension (up-to-date)
+skipping 'pycocotools/_mask.c' Cython extension (up-to-date)
+Compiling nms kernels by nvcc...
+Including CUDA code.
+/root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms
+['/root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src/nms_cuda_kernel.cu.o']
+generating /tmp/tmp_2y06v5e/_nms.c
+setting the current directory to '/tmp/tmp_2y06v5e'
+running build_ext
+building '_nms' extension
+creating root
+creating root/junyan
+creating root/junyan/object_detection
+creating root/junyan/object_detection/clean_domain_attention
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c _nms.c -o ./_nms.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src/nms_cuda.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src/nms_cuda.o
+gcc -pthread -shared -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -L/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,-rpath=/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,--no-as-needed -Wl,--sysroot=/ ./_nms.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src/nms_cuda.o /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/nms/src/nms_cuda_kernel.cu.o -o ./_nms.so
+Compiling roi pooling kernels by nvcc...
+/root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling
+Including CUDA code.
+generating /tmp/tmpg0u8nmr9/_roi_pooling.c
+setting the current directory to '/tmp/tmpg0u8nmr9'
+running build_ext
+building '_roi_pooling' extension
+creating root
+creating root/junyan
+creating root/junyan/object_detection
+creating root/junyan/object_detection/clean_domain_attention
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c _roi_pooling.c -o ./_roi_pooling.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling_cuda.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling_cuda.o
+gcc -pthread -shared -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -L/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,-rpath=/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,--no-as-needed -Wl,--sysroot=/ ./_roi_pooling.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling_cuda.o /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_pooling/src/roi_pooling.cu.o -o ./_roi_pooling.so
+Compiling roi align kernels by nvcc...
+/root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align
+Including CUDA code.
+generating /tmp/tmp3t9p0ios/_roi_align.c
+setting the current directory to '/tmp/tmp3t9p0ios'
+running build_ext
+building '_roi_align' extension
+creating root
+creating root/junyan
+creating root/junyan/object_detection
+creating root/junyan/object_detection/clean_domain_attention
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c _roi_align.c -o ./_roi_align.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align_cuda.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align_cuda.o
+gcc -pthread -shared -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -L/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,-rpath=/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,--no-as-needed -Wl,--sysroot=/ ./_roi_align.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align_cuda.o /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_align/src/roi_align_kernel.cu.o -o ./_roi_align.so
+Compiling roi crop kernels by nvcc...
+Including CUDA code.
+/root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop
+generating /tmp/tmp4p2r_44k/_roi_crop.c
+setting the current directory to '/tmp/tmp4p2r_44k'
+running build_ext
+building '_roi_crop' extension
+creating root
+creating root/junyan
+creating root/junyan/object_detection
+creating root/junyan/object_detection/clean_domain_attention
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop
+creating root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c _roi_crop.c -o ./_roi_crop.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop.o
+gcc -pthread -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/TH -I/usr/local/miniconda3/envs/domain_attention_object_detection/lib/python3.6/site-packages/torch/utils/ffi/../../lib/include/THC -I/usr/local/cuda/include -I/usr/local/miniconda3/envs/domain_attention_object_detection/include/python3.6m -c /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop_cuda.c -o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop_cuda.o
+gcc -pthread -shared -B /usr/local/miniconda3/envs/domain_attention_object_detection/compiler_compat -L/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,-rpath=/usr/local/miniconda3/envs/domain_attention_object_detection/lib -Wl,--no-as-needed -Wl,--sysroot=/ ./_roi_crop.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop.o ./root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop_cuda.o /root/junyan/object_detection/clean_domain_attention/towards-universal-object-detection/lib/model/roi_crop/src/roi_crop_cuda_kernel.cu.o -o ./_roi_crop.so
